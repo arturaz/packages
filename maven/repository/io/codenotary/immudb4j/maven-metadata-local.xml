@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>io.codenotary</groupId>
+  <artifactId>immudb4j</artifactId>
+  <versioning>
+    <latest>1.1.0-SNAPSHOT</latest>
+    <versions>
+      <version>1.1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20240419124518</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,138 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.codenotary",
+    "module": "immudb4j",
+    "version": "1.1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.3",
+      "buildId": "zf7ffc2z5fbihlzisbnqxmoavy"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "immudb4j-1.1.0-SNAPSHOT.jar",
+          "url": "immudb4j-1.1.0-SNAPSHOT.jar",
+          "size": 1398183,
+          "sha512": "e204467b0c9f1ed63cb9d924048d8416f55d2adad9081b5ac53c59ead4b8069118f25894cb77988c52e2a34ebe4ef90aba016ff67a18cb3956665e4b92cfb5b2",
+          "sha256": "cb1ba8cec38a95c2950d5d7c474a515a20d508596d29a456e270f640543ff8f5",
+          "sha1": "cac42561cdd4d8da9c083197b78543a6dcd11614",
+          "md5": "e14a6d87252add6cf2d65cda2e4cae40"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.grpc",
+          "module": "grpc-protobuf",
+          "version": {
+            "requires": "1.55.1"
+          }
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-netty",
+          "version": {
+            "requires": "1.55.1"
+          }
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-stub",
+          "version": {
+            "requires": "1.55.1"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api",
+          "version": {
+            "requires": "1.2-b01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "immudb4j-1.1.0-SNAPSHOT.jar",
+          "url": "immudb4j-1.1.0-SNAPSHOT.jar",
+          "size": 1398183,
+          "sha512": "e204467b0c9f1ed63cb9d924048d8416f55d2adad9081b5ac53c59ead4b8069118f25894cb77988c52e2a34ebe4ef90aba016ff67a18cb3956665e4b92cfb5b2",
+          "sha256": "cb1ba8cec38a95c2950d5d7c474a515a20d508596d29a456e270f640543ff8f5",
+          "sha1": "cac42561cdd4d8da9c083197b78543a6dcd11614",
+          "md5": "e14a6d87252add6cf2d65cda2e4cae40"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "immudb4j-1.1.0-SNAPSHOT-javadoc.jar",
+          "url": "immudb4j-1.1.0-SNAPSHOT-javadoc.jar",
+          "size": 2480817,
+          "sha512": "57871c2cdb5220301a645f037d6c4830b1915cfa2451ba3ab65eca085258d7b38b2a26cfdf183d3dd6459f8fbe3d710c061c83a35581df2a02eaf0699ab30300",
+          "sha256": "1abf9a327db5fa5889fae4ec2a2fc369abcfa5f5b2713d0e41d73dd27f9c85f3",
+          "sha1": "ee72de17d2dcc2624cec37f7d58b44000a3d12b6",
+          "md5": "7161d12bd7cb3cdd3ab38b3314dfa5c5"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "immudb4j-1.1.0-SNAPSHOT-sources.jar",
+          "url": "immudb4j-1.1.0-SNAPSHOT-sources.jar",
+          "size": 339716,
+          "sha512": "b1e17e010e200ed12178622b48745be46565510edb3bbb44853431873cec1fdf7089360e13d6066c9f87292ae975b518146e342703de7081bc980b676b03077c",
+          "sha256": "294aeacf0bca82e3f932c59b761f89a5a989cdabbe86ffff1c9586ca81b51171",
+          "sha1": "abfa14ba73272b7c81c2e9a9093bbeda63aea967",
+          "md5": "2451f1392bec316dc0550fde5c53bada"
+        }
+      ]
+    }
+  ]
+}
