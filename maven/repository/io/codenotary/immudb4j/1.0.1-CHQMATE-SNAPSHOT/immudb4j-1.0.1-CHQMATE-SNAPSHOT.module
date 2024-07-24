@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.codenotary",
+    "module": "immudb4j",
+    "version": "1.0.1-CHQMATE-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.9"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "immudb4j-1.0.1-CHQMATE-SNAPSHOT.jar",
+          "url": "immudb4j-1.0.1-CHQMATE-SNAPSHOT.jar",
+          "size": 1425525,
+          "sha512": "1bc04b065a06c227e3e7106c24f4e5bc17d97977602b792b68d5eedfa991cb4c8a7106baeed0c54c457f4952ccff32c724268941e80d3c03d5721f9ec609e11d",
+          "sha256": "f0ada122c36433afb2c8ae57d8c02011330df67d6deb1a99abd31f144849f728",
+          "sha1": "dd41526a2f41ac9f9ae4eb3a6bc8b256304750eb",
+          "md5": "528558929d8e97267ffb2509c5f203c7"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.grpc",
+          "module": "grpc-protobuf",
+          "version": {
+            "requires": "1.62.2"
+          }
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-netty",
+          "version": {
+            "requires": "1.62.2"
+          }
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-stub",
+          "version": {
+            "requires": "1.62.2"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api",
+          "version": {
+            "requires": "1.2-b01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "immudb4j-1.0.1-CHQMATE-SNAPSHOT.jar",
+          "url": "immudb4j-1.0.1-CHQMATE-SNAPSHOT.jar",
+          "size": 1425525,
+          "sha512": "1bc04b065a06c227e3e7106c24f4e5bc17d97977602b792b68d5eedfa991cb4c8a7106baeed0c54c457f4952ccff32c724268941e80d3c03d5721f9ec609e11d",
+          "sha256": "f0ada122c36433afb2c8ae57d8c02011330df67d6deb1a99abd31f144849f728",
+          "sha1": "dd41526a2f41ac9f9ae4eb3a6bc8b256304750eb",
+          "md5": "528558929d8e97267ffb2509c5f203c7"
+        }
+      ]
+    }
+  ]
+}
