@@ -40,7 +40,7 @@
         <dependency>
             <groupId>be.doeraene</groupId>
             <artifactId>url-dsl_3</artifactId>
-            <version>0.6.1+5-6616fee5-SNAPSHOT</version>
+            <version>0.6.2</version>
         </dependency>
         <dependency>
             <groupId>com.lihaoyi</groupId>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-  <info organisation="com.raquo" module="waypoint_3" revision="8.1.0-SNAPSHOT" status="integration" publication="20240703122537">
+  <info organisation="com.raquo" module="waypoint_3" revision="8.1.0-SNAPSHOT" status="integration" publication="20240814165028">
     <description homepage="https://github.com/raquo/waypoint">Waypoint</description>
   </info>
   <configurations>
@@ -29,7 +29,7 @@
     <dependency org="org.scala-lang" name="scala3-compiler_3" rev="3.3.1" conf="scala-tool->default(compile)"> </dependency>
     <dependency org="org.scala-lang" name="scaladoc_3" rev="3.3.1" conf="scala-doc-tool->default(compile)"> </dependency>
     <dependency org="org.scala-lang" name="scala3-library_3" rev="3.3.1" conf="compile->default(compile)"> </dependency>
-    <dependency org="be.doeraene" name="url-dsl_3" rev="0.6.1+5-6616fee5-SNAPSHOT" conf="compile->default(compile)"> </dependency>
+    <dependency org="be.doeraene" name="url-dsl_3" rev="0.6.2" conf="compile->default(compile)"> </dependency>
     <dependency org="com.lihaoyi" name="upickle_3" rev="2.0.0" conf="test->default(compile)"> </dependency>
     <dependency org="org.scalatest" name="scalatest_3" rev="3.2.14" conf="test->default(compile)"> </dependency>
   </dependencies>
