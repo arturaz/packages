@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.jkugiya</groupId>
+    <artifactId>ulid-scala_sjs1_2.13</artifactId>
+    <packaging>jar</packaging>
+    <description>A Scala port of alizain/ulid</description>
+    <url>https://github.com/jkugiya/ulid-scala</url>
+    <version>1.0.5-SNAPSHOT</version>
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://github.com/jkugiya/ulid-scala/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>ulid-scala</name>
+    <organization>
+        <name>jkugiya</name>
+        <url>https://github.com/jkugiya/ulid-scala</url>
+    </organization>
+    <scm>
+        <url>https://github.com/jkugiya/ulid-scala</url>
+        <connection>scm:git@github.com:jkugiya/ulid-scala.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>jkugiya</id>
+            <name>Jiro kugiya</name>
+            <url>https://github.com/jkugiya</url>
+            <email>j.kugiya@gmail.com</email>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.13.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-js</groupId>
+            <artifactId>scalajs-library_2.13</artifactId>
+            <version>1.16.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-js</groupId>
+            <artifactId>scalajs-scalalib_2.13</artifactId>
+            <version>2.13.14+1.16.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-js</groupId>
+            <artifactId>scalajs-test-bridge_2.13</artifactId>
+            <version>1.16.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_sjs1_2.13</artifactId>
+            <version>3.2.19</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
