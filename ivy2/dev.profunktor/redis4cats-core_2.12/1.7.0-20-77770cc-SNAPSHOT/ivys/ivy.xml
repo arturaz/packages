@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+  <info organisation="dev.profunktor" module="redis4cats-core_2.12" revision="1.7.0-20-77770cc-SNAPSHOT" status="integration" publication="20250205162956">
+    <description homepage="https://redis4cats.profunktor.dev/">redis4cats-core</description>
+  </info>
+  <configurations>
+    <conf name="plugin" visibility="public" description=""/>
+    <conf name="pom" visibility="public" description=""/>
+    <conf extends="runtime" name="test" visibility="public" description=""/>
+    <conf name="provided" visibility="public" description=""/>
+    <conf extends="compile,optional,provided" name="compile-internal" visibility="public" description=""/>
+    <conf name="docs" visibility="public" description=""/>
+    <conf name="optional" visibility="public" description=""/>
+    <conf name="compile" visibility="public" description=""/>
+    <conf extends="test,optional,provided" name="test-internal" visibility="public" description=""/>
+    <conf name="scala-tool" visibility="public" description=""/>
+    <conf name="scala-doc-tool" visibility="public" description=""/>
+    <conf name="sources" visibility="public" description=""/>
+    <conf extends="compile" name="runtime" visibility="public" description=""/>
+    <conf extends="runtime,optional" name="runtime-internal" visibility="public" description=""/>
+  </configurations>
+  <publications>
+    <artifact name="redis4cats-core_2.12" type="jar" ext="jar" conf="compile"/>
+    <artifact e:classifier="sources" name="redis4cats-core_2.12" type="src" ext="jar" conf="sources"/>
+    <artifact e:classifier="javadoc" name="redis4cats-core_2.12" type="doc" ext="jar" conf="docs"/>
+    <artifact name="redis4cats-core_2.12" type="pom" ext="pom" conf="pom"/>
+  </publications>
+  <dependencies>
+    <dependency org="org.scala-lang" name="scala-compiler" rev="2.12.20" conf="scala-tool->default"> </dependency>
+    <dependency org="org.scala-lang" name="scala-compiler" rev="2.12.20" conf="scala-tool->optional(default)"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.12.20" conf="scala-tool->default"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.12.20" conf="scala-tool->optional(default)"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.12.20" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="cats-effect-kernel_2.12" rev="3.5.7" conf="compile->default(compile)"> </dependency>
+    <dependency org="io.lettuce" name="lettuce-core" rev="6.5.2.RELEASE" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="cats-effect_2.12" rev="3.5.7" conf="test->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="cats-core_2.12" rev="2.12.0" conf="test->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="cats-testkit_2.12" rev="2.12.0" conf="test->default(compile)"> </dependency>
+    <dependency org="org.scalameta" name="munit_2.12" rev="1.0.3" conf="test->default(compile)"> </dependency>
+    <dependency org="org.scalameta" name="munit-scalacheck_2.12" rev="1.0.0" conf="test->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="kind-projector_2.12.20" rev="0.13.3" conf="plugin->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="literally_2.12" rev="1.2.0" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.scala-lang" name="scala-reflect" rev="2.12.20" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.scalameta" name="semanticdb-scalac_2.12.20" rev="4.12.3" conf="plugin->default(compile)"> </dependency>
+    <dependency org="com.sourcegraph" name="semanticdb-javac" rev="0.10.3" conf="compile-internal->default(compile)"> </dependency>
+    <dependency org="com.sourcegraph" name="semanticdb-javac" rev="0.10.3" conf="test-internal->default(compile)"> </dependency>
+  </dependencies>
+</ivy-module>
