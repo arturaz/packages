@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+  <info organisation="io.github.arturaz" module="cats-effect-resource-shared-memoized_sjs1_2.13" revision="1.0-eeb7d65-20250220T122918Z-SNAPSHOT" status="integration" publication="20250220142919" e:info.apiURL="https://s01.oss.sonatype.org/service/local/repositories/snapshots/archive/io/github/arturaz/cats-effect-resource-shared-memoized_sjs1_2.13/1.0-eeb7d65-20250220T122918Z-SNAPSHOT/cats-effect-resource-shared-memoized_sjs1_2.13-1.0-eeb7d65-20250220T122918Z-SNAPSHOT-javadoc.jar/!/index.html" e:info.releaseNotesUrl="https://github.com/arturaz/cats-effect-resource-shared-memoized/releases/tag/rm" e:info.versionScheme="early-semver">
+    <description homepage="https://arturaz.github.io/cats-effect-resource-shared-memoized">cats-effect-resource-shared-memoized</description>
+  </info>
+  <configurations>
+    <conf name="plugin" visibility="public" description=""/>
+    <conf name="pom" visibility="public" description=""/>
+    <conf extends="runtime" name="test" visibility="public" description=""/>
+    <conf name="provided" visibility="public" description=""/>
+    <conf extends="compile,optional,provided" name="compile-internal" visibility="public" description=""/>
+    <conf name="scalafix" visibility="public" description=""/>
+    <conf name="compile-time" visibility="public" description=""/>
+    <conf name="docs" visibility="public" description=""/>
+    <conf name="optional" visibility="public" description=""/>
+    <conf name="compile" visibility="public" description=""/>
+    <conf extends="test,optional,provided" name="test-internal" visibility="public" description=""/>
+    <conf name="scala-tool" visibility="public" description=""/>
+    <conf name="scala-doc-tool" visibility="public" description=""/>
+    <conf name="sources" visibility="public" description=""/>
+    <conf extends="compile" name="runtime" visibility="public" description=""/>
+    <conf extends="runtime,optional" name="runtime-internal" visibility="public" description=""/>
+  </configurations>
+  <publications>
+    <artifact name="cats-effect-resource-shared-memoized_sjs1_2.13" type="jar" ext="jar" conf="compile"/>
+    <artifact e:classifier="sources" name="cats-effect-resource-shared-memoized_sjs1_2.13" type="src" ext="jar" conf="sources"/>
+    <artifact e:classifier="javadoc" name="cats-effect-resource-shared-memoized_sjs1_2.13" type="doc" ext="jar" conf="docs"/>
+    <artifact name="cats-effect-resource-shared-memoized_sjs1_2.13" type="pom" ext="pom" conf="pom"/>
+  </publications>
+  <dependencies>
+    <dependency org="org.scala-lang" name="scala-compiler" rev="2.13.16" conf="scala-tool->default"> </dependency>
+    <dependency org="org.scala-lang" name="scala-compiler" rev="2.13.16" conf="scala-tool->optional(default)"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.13.16" conf="scala-tool->default"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.13.16" conf="scala-tool->optional(default)"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.13.16" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.scala-js" name="scalajs-compiler_2.13.16" rev="1.18.2" conf="plugin->default(compile)"> </dependency>
+    <dependency org="org.scala-js" name="scalajs-library_2.13" rev="1.18.2" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.scala-js" name="scalajs-scalalib_2.13" rev="2.13.16+1.18.2" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.scala-js" name="scalajs-test-bridge_2.13" rev="1.18.2" conf="test->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="scalac-compat-annotation_2.13" rev="0.1.4" conf="provided->default(compile)"> </dependency>
+    <dependency org="com.olegpy" name="better-monadic-for_2.13" rev="0.3.1" conf="plugin->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="kind-projector_2.13.16" rev="0.13.3" conf="plugin->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="cats-core_sjs1_2.13" rev="2.13.0" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="cats-effect_sjs1_2.13" rev="3.5.7" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.scalameta" name="munit_sjs1_2.13" rev="1.1.0" conf="test->default(compile)"> </dependency>
+    <dependency org="org.typelevel" name="munit-cats-effect_sjs1_2.13" rev="2.0.0" conf="test->default(compile)"> </dependency>
+    <dependency org="org.scalameta" name="semanticdb-scalac_2.13.16" rev="4.12.4.1" conf="plugin->default(compile)"> </dependency>
+  </dependencies>
+</ivy-module>

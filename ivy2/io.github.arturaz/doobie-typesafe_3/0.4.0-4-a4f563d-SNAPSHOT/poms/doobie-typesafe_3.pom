@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.github.arturaz</groupId>
+    <artifactId>doobie-typesafe_3</artifactId>
+    <packaging>jar</packaging>
+    <description>Typesafe table definitions for doobie</description>
+    <url>https://arturaz.github.io/doobie-typesafe</url>
+    <version>0.4.0-4-a4f563d-SNAPSHOT</version>
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>doobie-typesafe</name>
+    <inceptionYear>2023</inceptionYear>
+    <organization>
+        <name>arturaz</name>
+    </organization>
+    <scm>
+        <url>https://github.com/arturaz/doobie-typesafe</url>
+        <connection>scm:git:https://github.com/arturaz/doobie-typesafe.git</connection>
+        <developerConnection>scm:git:git@github.com:arturaz/doobie-typesafe.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>arturaz</id>
+            <name>doobie-typesafe contributors</name>
+            <url>https://github.com/arturaz/doobie-typesafe/contributors</url>
+            <email>@arturaz</email>
+        </developer>
+        <developer>
+            <id>arturaz</id>
+            <name>Artūras Šlajus</name>
+            <url>https://github.com/arturaz</url>
+            <email>@arturaz</email>
+        </developer>
+    </developers>
+    <properties>
+        <info.apiURL>https://s01.oss.sonatype.org/service/local/repositories/snapshots/archive/io/github/arturaz/doobie-typesafe_3/0.4.0-4-a4f563d-SNAPSHOT/doobie-typesafe_3-0.4.0-4-a4f563d-SNAPSHOT-javadoc.jar/!/index.html</info.apiURL>
+        <info.versionScheme>early-semver</info.versionScheme>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala3-library_3</artifactId>
+            <version>3.3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.typelevel</groupId>
+            <artifactId>scalac-compat-annotation_3</artifactId>
+            <version>0.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.tpolecat</groupId>
+            <artifactId>doobie-core_3</artifactId>
+            <version>1.0.0-RC8</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+      <info organisation="org.scalablytyped" module="supabase__supabase-js_sjs1_3" revision="2.46.1-48343c" status="release" publication="23012025112937">
+        <description>
+          supabase__supabase-js
+        </description>
+      </info>
+      <configurations>
+        <conf name="compile" visibility="public" description=""/>
+        <conf name="runtime" visibility="public" description="" extends="compile"/>
+        <conf name="test" visibility="public" description="" extends="runtime"/>
+        <conf name="provided" visibility="public" description=""/>
+        <conf name="optional" visibility="public" description=""/>
+        <conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+        <conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+        <conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+        <conf name="plugin" visibility="private" description=""/>
+        <conf name="pom" visibility="public" description=""/>
+        <conf name="scala-tool" visibility="private" description=""/>
+      </configurations>
+      <publications>
+        <artifact name="supabase__supabase-js_sjs1_3" type="jar" ext="jar" conf="compile"/>
+        <artifact name="supabase__supabase-js_sjs1_3" type="pom" ext="pom" conf="pom"/>
+        <artifact name="supabase__supabase-js_sjs1_3" type="src" ext="jar" conf="compile" e:classifier="sources"/>
+      </publications>
+      <dependencies>
+        <dependency org="org.scala-lang" name="scala3-compiler_3" rev="3.6.3" conf="scala-tool-&gt;default,optional(default)"/>
+        <dependency org="org.scala-lang" name="scala-library" rev="2.13.12" conf="scala-tool-&gt;default,optional(default);compile-&gt;default(compile)"/>
+        
+        <dependency org="org.scala-js" name="scalajs-library_2.13" rev="1.18.2" conf="compile-&gt;default(compile)"/>
+        <dependency org="org.scala-js" name="scalajs-test-interface_2.13" rev="1.18.2" conf="test-&gt;default(compile)"/>
+        <dependency org="com.olvind" name="scalablytyped-runtime_sjs1_3" rev="2.4.2" conf="compile-&gt;default(compile)"/>
+        <dependency org="org.scalablytyped" name="supabase__auth-js_sjs1_3" rev="2.65.1-518a34" conf="compile-&gt;default(compile)"/><dependency org="org.scalablytyped" name="supabase__functions-js_sjs1_3" rev="2.4.3-c63dc7" conf="compile-&gt;default(compile)"/><dependency org="org.scalablytyped" name="supabase__realtime-js_sjs1_3" rev="2.10.7-0ce968" conf="compile-&gt;default(compile)"/><dependency org="org.scalablytyped" name="supabase__storage-js_sjs1_3" rev="2.7.1-49753a" conf="compile-&gt;default(compile)"/><dependency org="org.scalablytyped" name="phoenix_sjs1_3" rev="1.6.5-6256aa" conf="compile-&gt;default(compile)"/><dependency org="org.scalablytyped" name="ws_sjs1_3" rev="8.5.13-4bd581" conf="compile-&gt;default(compile)"/><dependency org="org.scalablytyped" name="std_sjs1_3" rev="5.6-d69f73" conf="compile-&gt;default(compile)"/>
+        <dependency org="org.scala-js" name="scalajs-dom_sjs1_3" rev="2.3.0" conf="compile-&gt;default(compile)"/><dependency org="com.olvind" name="scalablytyped-runtime_sjs1_3" rev="2.4.2" conf="compile-&gt;default(compile)"/>
+      </dependencies>
+    </ivy-module>

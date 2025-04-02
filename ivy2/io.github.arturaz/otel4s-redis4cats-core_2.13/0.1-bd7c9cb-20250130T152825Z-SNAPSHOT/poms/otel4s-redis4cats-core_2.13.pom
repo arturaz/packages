@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.github.arturaz</groupId>
+    <artifactId>otel4s-redis4cats-core_2.13</artifactId>
+    <packaging>jar</packaging>
+    <description>otel4s-redis4cats-core</description>
+    <url>https://arturaz.github.io/otel4s-redis4cats</url>
+    <version>0.1-bd7c9cb-20250130T152825Z-SNAPSHOT</version>
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>otel4s-redis4cats-core</name>
+    <inceptionYear>2025</inceptionYear>
+    <organization>
+        <name>Artūras Šlajus</name>
+    </organization>
+    <scm>
+        <url>https://github.com/arturaz/otel4s-redis4cats</url>
+        <connection>scm:git:https://github.com/arturaz/otel4s-redis4cats.git</connection>
+        <developerConnection>scm:git:git@github.com:arturaz/otel4s-redis4cats.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>arturaz</id>
+            <name>Artūras Šlajus</name>
+            <url>https://github.com/arturaz</url>
+            <email>@arturaz</email>
+        </developer>
+    </developers>
+    <properties>
+        <info.apiURL>https://s01.oss.sonatype.org/service/local/repositories/snapshots/archive/io/github/arturaz/otel4s-redis4cats-core_2.13/0.1-bd7c9cb-20250130T152825Z-SNAPSHOT/otel4s-redis4cats-core_2.13-0.1-bd7c9cb-20250130T152825Z-SNAPSHOT-javadoc.jar/!/index.html</info.apiURL>
+        <info.versionScheme>early-semver</info.versionScheme>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.13.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.typelevel</groupId>
+            <artifactId>scalac-compat-annotation_2.13</artifactId>
+            <version>0.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>dev.profunktor</groupId>
+            <artifactId>redis4cats-core_2.13</artifactId>
+            <version>1.7.0-4-d2e64b1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.typelevel</groupId>
+            <artifactId>otel4s-core-trace_2.13</artifactId>
+            <version>0.11.2</version>
+        </dependency>
+    </dependencies>
+</project>
